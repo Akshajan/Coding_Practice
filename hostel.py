@@ -4,16 +4,11 @@
 #less prime (pp)
 #greater composite(cc)
 
-a = list("kku")
+a = list("Kkunjkhahorin")
 print(a)
 prime =[]
 comp =[]
-#  n
-# n < 2 false
-# n == 2 true
-# # for  i  2->n
-        # n%i break
-# # true
+
 def isprime(n):
     if n<2:
         return False
@@ -21,8 +16,9 @@ def isprime(n):
         return True
     for i in range(2,n//2+1):
         if n%i == 0:
-            return True
+            return False
             break
+    return True
 prime = []
 composite = []
 for item in a:
@@ -31,7 +27,7 @@ for item in a:
         prime.append(item)
     else:
         composite.append(item)
-    
+           
 prime.sort()
 composite.sort()
 a= prime + composite[::-1]
