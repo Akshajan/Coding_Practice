@@ -1,6 +1,9 @@
 str = input("Enter the sequence:")
 key = int(input("enter the Shift Value:"))
 enc=[]
+if key == 0:
+    print("Invalid Input")
+    key = int(input("enter the Shift Value:"))
 for i in str:
     if i.islower():
         enc.append(chr((ord(i)-ord("a")+key)%26 + ord("a")))

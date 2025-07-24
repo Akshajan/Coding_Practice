@@ -17,9 +17,11 @@ dungeon = "78 130,10 0,100 343,1000 5,5 500"
 
 def fight(dungeon ,player_power,n):
     count = 0
+    
     # future logic player resurrects not implemented
     monsters = dungeon.split(",")
     sort_monster = []
+    
     for i in monsters:
         sort_monster.append(tuple(i.split(" ")))
     
@@ -34,7 +36,6 @@ def fight(dungeon ,player_power,n):
         print("Starting Fight ->")
         if player_power >= int(m_power):
             player_power+=int(m_bonus)
-            print("Hahahaha u r weak. Exp +",m_bonus)     
             count +=1
             
             if count == n:
@@ -46,7 +47,7 @@ def fight(dungeon ,player_power,n):
             
         else:
             print("You are strong.\nDmn . Im dead")
-            print("U r a waste of time")
+  
             print("Score: ",player_power )
             print("Monsters Slayed: ",count )
             break

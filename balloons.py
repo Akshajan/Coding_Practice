@@ -2,7 +2,6 @@ n = int(input("input number of colors of balloons:"))
 l=[]
 for i in range(n):
     l.append(input("Enter the color:")) 
-c=[] 
 found_odd = False
 for i in range(n): 
     count = 0  
