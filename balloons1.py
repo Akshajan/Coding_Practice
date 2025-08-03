@@ -7,7 +7,7 @@ for i in b:
         z[i]=1
     else:
         z[i]=z[i]+1
-    
+print(z)   
 for i in z:
     if(z[i]%2!=0):
         print(i,"count is",z[i])
