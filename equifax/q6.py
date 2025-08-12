@@ -15,6 +15,6 @@ for char in s:
 
 # collecting non-repeating characters
 l = [char for char,count in matches.items() if count == 1]
-        
-print("List of Non-repeating characters are :",' '.join(l))  
+
+print("Non-repeating characters are :",' '.join(l))  
 print(f"Total count is {len(l)}")

@@ -1,4 +1,4 @@
-# accepting chemicals in the format [12 34 73 86] and returning sum of the chemicals that give max product in this 14
+# accepting chemicals in the format [12 34 73 86] and returning sum of the chemicals that give max product in this 8+6=14
 
 n = int(input("Enter the size: "))
 s = input("Enter the chemicals: ").strip().split()

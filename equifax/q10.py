@@ -24,7 +24,7 @@ def simulate_cells(N, S, D):
 
     for _ in range(D):
         new_state = []
-        for i in range(N):
+        for i in range(N):  
             left = state[i - 1] if i > 0 else 0
             right = state[i + 1] if i < N - 1 else 0
             new_state.append(0 if left == right else 1)
